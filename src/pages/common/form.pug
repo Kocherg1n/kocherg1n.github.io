@@ -1,0 +1,25 @@
+form.form#myForm
+  .form__col
+    .form__row
+      .form__cust-select
+        select.form__select.form__field(required)
+          option.form__select-option(value="" hidden) Выберите тип системы
+          option.form__select-option(value='Nemo enim ipsam') Nemo enim ipsam
+          option.form__select-option(value='Et harum quidem') Et harum quidem
+          option.form__select-option(value='Temporibus autem') Temporibus autem
+          option.form__select-option(value='Itaque earum rerum') Itaque earum rerum
+          option.form__select-option(value='Nemo enim ipsam') Nemo enim ipsam
+          option.form__select-option(value='Et harum quidem') Et harum quidem
+          option.form__select-option(value='Temporibus autem') Temporibus autem
+          option.form__select-option(value='Itaque earum rerum') Itaque earum rerum
+      input.form__field(type='email' name='email' placeholder='Ваш e-mail' required)
+      input.form__field(type='text' name='name' placeholder='Ваше имя' required)
+    .form__row.form__row-align
+      .form__range-container
+        input.form__range(type='range' min="0" max="100" value="75" id='range')
+        .form__range-value
+        .form__range-title Sed ut perspiciatis, unde omnis iste natus
+      input(type="file" name="file" id="file" required).form__input-file
+      label.form__input-file-label(for="file") #[span Прикрепить файл]
+    .form__controls
+      button(type='submit').form__submit отправить

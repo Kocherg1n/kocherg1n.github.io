@@ -1,0 +1,71 @@
+.contacts {
+    color: $color-secondary;
+    display: flex;
+    position: relative;
+
+    @include media-laptop {
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    @include media-tablet {
+        margin-top: 14px;
+    }
+
+    @include media-mobile {
+        justify-content: space-around;
+    }
+
+    &__mail {
+        margin-right: 59px;
+        position: relative;
+        color: $color-secondary;
+
+        &:visited {
+            color: $color-secondary;
+        }
+
+        &:hover {
+            color: $color-tertiary-dark;
+            transition: $speed;
+        }
+
+        @include media-mobile {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: url("../img/mail1.png");
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 13px;
+        }
+    }
+
+    &__vk {
+        position: relative;
+        color: $color-secondary;
+
+        &:visited {
+            color: $color-secondary;
+        }
+
+        &::before {
+            content: url("../img/vk.png");
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 11px;
+            height: 13px;
+        }
+
+        &:hover {
+            color: $color-tertiary-dark;
+            transition: $speed;
+        }
+    }
+}

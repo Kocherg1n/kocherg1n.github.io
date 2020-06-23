@@ -1,0 +1,52 @@
+.order {
+    min-height: 880px;
+    background: $color-primary;
+    padding: 117px 0 147px 0;
+    position: relative;
+
+    &__content {
+        position: relative;
+    }
+
+    &::before {
+        content: "";
+        background-image: url("../img/map.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-secondary;
+        text-align: center;
+    }
+
+    &__title span {
+        color: $color-tertiary-light;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-neutral;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    &__cycle {
+        margin-top: 79px;
+
+        @include media-laptop {
+            margin-top: 60px;
+        }
+    }
+}

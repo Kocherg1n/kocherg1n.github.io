@@ -1,0 +1,93 @@
+.payment {
+    display: flex;
+    margin-left: 0;
+    margin-right: 120px;
+
+    @include media-laptop {
+        margin-right: 0;
+    }
+
+    @include media-mobile {
+        justify-content: space-around;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__item {
+        margin-right: 68px;
+        color: $color-neutral-dark;
+
+        &:visited {
+            color: $color-neutral-dark;
+        }
+
+        &:hover {
+            color: $color-tertiary-dark;
+            transition: $speed;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include media-mobile {
+            margin-right: 0;
+        }
+    }
+
+    &__item-qiwi {
+        position: relative;
+
+        &::before {
+            content: url("../img/qiwi.png");
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+
+            @include media-mobile-m {
+                left: -18px;
+            }
+        }
+    }
+
+    &__item-yandex {
+        position: relative;
+
+        &::before {
+            content: url("../img/yandex.png");
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 11px;
+            height: 15px;
+
+            @include media-mobile-m {
+                left: -18px;
+            }
+        }
+    }
+
+    &__item-webmoney {
+        position: relative;
+
+        &::before {
+            content: url("../img/webmoney.png");
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+
+            @include media-mobile-m {
+                left: -18px;
+            }
+        }
+    }
+}
