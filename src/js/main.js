@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const getHamburger = () => {
         const hamburgerBtn = document.querySelector('.hamburger')
         const hamburgerNav = document.querySelector('.hamburger-nav')
+
         hamburgerBtn.addEventListener('click', () => {
             hamburgerNav.classList.toggle('hamburger-nav--active')
             document.body.classList.toggle('overflow-hidden')

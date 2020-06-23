@@ -20,6 +20,10 @@
         left: 0;
         bottom: 0;
         right: 0;
+
+        @include media-tablet-desktop {
+            background-repeat: repeat-y;
+        }
     }
 
     &__title {
